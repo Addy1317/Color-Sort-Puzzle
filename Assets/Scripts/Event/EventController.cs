@@ -1,11 +1,3 @@
-#region Summary
-/// <summary>
-/// EventController and EventsController<T> are classes responsible for managing events in the game. 
-/// - EventController handles basic events with no parameters, allowing listeners to be added, removed, and invoked.
-/// - EventsController<T> extends this functionality by allowing events with a generic parameter, enabling more flexible event handling.
-/// Both classes provide methods for invoking events and managing listeners, ensuring that events are triggered and handled as needed.
-/// </summary>
-#endregion
 using System;
 
 namespace SlowpokeStudio.Event

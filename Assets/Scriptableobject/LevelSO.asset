@@ -13,7 +13,23 @@ MonoBehaviour:
   m_Name: LevelSO
   m_EditorClassIdentifier: 
   levels:
-  - levelName: 
+  - levelName: 1
     levelIndex: 0
-    levelPrefab: {fileID: 0}
-    coins: 0
+    levelPrefab: {fileID: 496560284705332630, guid: 7b30bbfc6ec5cf94a8e95618cfe3d49e, type: 3}
+    coins: 10
+  - levelName: 2
+    levelIndex: 0
+    levelPrefab: {fileID: 298102271224161786, guid: d82d468d5acca924ea74a5718a348623, type: 3}
+    coins: 20
+  - levelName: 3
+    levelIndex: 0
+    levelPrefab: {fileID: 3546148904201947488, guid: 7f09f7a38bdcb224287a044ce2672aba, type: 3}
+    coins: 30
+  - levelName: 4
+    levelIndex: 0
+    levelPrefab: {fileID: 3153105255127935569, guid: 1fc83402a0a3f7e47b3f42c635f35532, type: 3}
+    coins: 40
+  - levelName: 5
+    levelIndex: 0
+    levelPrefab: {fileID: 1381982091094692473, guid: dd817ff2dc38a3e4bbf7551266d422cd, type: 3}
+    coins: 50

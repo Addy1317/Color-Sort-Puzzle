@@ -16,10 +16,10 @@ namespace SlowpokeStudio.Levels
         public int coins = 0;
     }
 
-    [CreateAssetMenu(fileName = "LevelSO", menuName = "Scriptable Objects/LevelSO")]
+    [CreateAssetMenu(fileName = "LevelSO", menuName = "Scriptable Objects/Level")]
     public class LevelSO : ScriptableObject
     {
         [Header("List of Levels")]
-        public LevelDataSO[] levels;
+        [SerializeField] internal LevelDataSO[] levels;
     }
 }

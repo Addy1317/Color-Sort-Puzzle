@@ -1,6 +1,7 @@
 using SlowpokeStudio.Audio;
 using SlowpokeStudio.Event;
 using SlowpokeStudio.Generic;
+using SlowpokeStudio.Levels;
 using SlowpokeStudio.UI;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,8 +12,10 @@ namespace SlowpokeStudio.Services
     {
         [Header("Service")]
         [SerializeField] internal AudioManager audioManager;
+        [SerializeField] internal CurrencyManager currencyManager;
         [SerializeField] internal EventManager eventManager;
         [SerializeField] internal UIManager uiManager;
+        [SerializeField] internal LevelManager levelManager;
 
         protected override void Awake()
         {
@@ -34,7 +37,9 @@ namespace SlowpokeStudio.Services
             var services = new Dictionary<string, Object>
             {
             { "AudioManager", audioManager },
+            { "CurrencyManager", currencyManager },
             { "EventManager", eventManager },
+            { "LevelManager", levelManager },
             { "UIManager", uiManager },
             };
 

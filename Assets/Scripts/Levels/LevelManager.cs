@@ -69,7 +69,7 @@ namespace SlowpokeStudio.Levels
         internal void LoadNextLevel()
         {
             var coins = levelDatabase.levels[currentLevelIndex].coins;
-            //GameService.Instance.currencyManager.AddCoins(coins);
+            GameService.Instance.currencyManager.AddCoins(coins);
 
             int nextIndex = currentLevelIndex + 1;
             if (nextIndex >= levelDatabase.levels.Length)

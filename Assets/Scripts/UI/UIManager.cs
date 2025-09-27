@@ -1,9 +1,4 @@
-#region Summary
-// UIManager is responsible for managing and updating the game's UI elements, including health, wave count, kills, currency, and tower selection.
-// It updates the UI when certain events happen, such as enemy deaths or health changes.
-#endregion
 using SlowpokeStudio.Services;
-using SlowpokeStudio.Audio;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -122,7 +117,7 @@ namespace SlowpokeStudio.UI
         {
             GameService.Instance.audioManager.PlaySFX(SFXType.OnButtonClickSFX);
             Debug.Log("Replaying Level");
-            //GameService.Instance.levelManager.RestartLevel();
+            GameService.Instance.levelManager.RestartLevel();
         }
 
         private void OnsettingsButton()
@@ -178,7 +173,7 @@ namespace SlowpokeStudio.UI
             GameService.Instance.audioManager.PlaySFX(SFXType.OnLevelCompleteSFX);
             nextLevelButton.gameObject.SetActive(false);
             levelCompletePanel.SetActive(true);
-            //GameService.Instance.levelManager.LoadNextLevel();
+            GameService.Instance.levelManager.LoadNextLevel();
 
             StartCoroutine(NextButtonVisible());
             Debug.Log("On Next Level Button Clicked");
@@ -217,17 +212,6 @@ namespace SlowpokeStudio.UI
             allLevelsCompletedPanel.SetActive(false);
             Debug.Log("[UIManager] Switched to Main Menu UI");
 
-           /* if (GameService.Instance.saveManager != null)
-            {
-                GameService.Instance.saveManager.ClearAllData();
-            }
-            else
-            {
-                // Fallback if you're using PlayerPrefs directly
-                PlayerPrefs.DeleteAll();
-                PlayerPrefs.Save();
-                Debug.Log("[LevelManager] All PlayerPrefs cleared!");
-            }*/
         }
 
         private void OnAllLevelCompletedQuitButton()

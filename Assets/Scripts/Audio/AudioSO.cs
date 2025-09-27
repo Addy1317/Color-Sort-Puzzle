@@ -5,10 +5,9 @@ namespace SlowpokeStudio
     public enum SFXType
     {
         OnButtonClickSFX,
-        OnHoleClickSFX,
-        OnCharaceterReachedToHoleSFX,
+        OnPouringSFX,
+        OnPouringCompleteSFX,
         OnLevelCompleteSFX
-         
     }
 
     [CreateAssetMenu(fileName = "AudioSO", menuName = "Audio/AudioSO")]
