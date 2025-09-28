@@ -14,7 +14,7 @@ namespace SlowpokeStudio.Bottle
         private bool allFull = false; 
 
         public int levelToUnlock;
-        int numberOfUnlockedLevel;
+        private int numberOfUnlockedLevel;
 
         private float bottleUp = 0.3f; 
         private float bottleDown = -0.3f; 
